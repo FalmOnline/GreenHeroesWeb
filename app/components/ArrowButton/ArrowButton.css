@@ -1,0 +1,9 @@
+button.arrow {
+    padding: 0;
+    background-color: transparent;
+}
+
+button.arrow:hover {
+    color: var(--green-dark)
+}
+

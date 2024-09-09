@@ -1,5 +1,5 @@
 import { getSinglePost, getPostSlugs } from "@/lib/posts";
-import Date from "@/app/components/date";
+import Date from "@/app/components/Date";
 
 export async function generateStaticParams() {
   const postSlugs = await getPostSlugs();

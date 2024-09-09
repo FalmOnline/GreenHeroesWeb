@@ -49,7 +49,7 @@ export default function Footer() {
                     Creat de: 
                     <Link className="flex text-gh-medium-grey items-center" href="https://asociatiauman.ro" target="_blank"><Image src="/Logo-UMAN.png" alt="logo asociatia uman" width={60} height={56} />Asociația Uman</Link>
                     <p className="text-gh-medium-grey font-light">|</p>
-                    <Link className="flex text-gh-medium-grey items-center gap-2" href="https://www.saguna.ro"><Image src="/colegiul-national-andrei-saguna-brasov-logo.png" alt="logo asociatia uman" width={60} height={56} />Colegiul Național "Andrei Șaguna", Brașov</Link>
+                    <Link className="flex text-gh-medium-grey items-center gap-2" href="https://www.saguna.ro"><Image src="/colegiul-national-andrei-saguna-brasov-logo.png" alt="logo asociatia uman" width={60} height={56} />Colegiul Național &quot;Andrei Șaguna&quot;, Brașov</Link>
                 </div>
             </div>
         </div>

@@ -69,21 +69,21 @@ Pentru a combate acest fenomen, poți face câteva schimbări simple în viața 
                 <div className="relative group">
                     <button className="px-4 py-2">Utilizarea Transportului Public</button>
                     <div className="absolute shadow-lg left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-48 p-4 bg-white text-gh-dark-grey text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <img src="/foloseste-transport-public.jpg" alt="Public Transport" className="mb-2 rounded-md" />
+                      <Image src="/foloseste-transport-public.jpg" alt="Public Transport" className="mb-2 rounded-md" width={160} height={206} />
                       <p className='text-base leading-4'>Utilizarea transportului public reduce emisiile de carbon.</p>
                     </div>
                   </div>
                   <div className="relative group">
                     <button className="px-4 py-2">Folosirea Bicicletei</button>
                     <div className="absolute shadow-lg left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-48 p-4 bg-white text-gh-dark-grey text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <img src="/foloseste-bicicleta.jpg" alt="Public Transport" className="mb-2 rounded-md" />
+                      <Image src="/foloseste-bicicleta.jpg" alt="Public Transport" className="mb-2 rounded-md" width={160} height={206} />
                       <p className='text-base leading-4'>Bicicleta reduce impactul asupra mediului și îți menține corpul în formă.</p>
                     </div>
                   </div>
                   <div className="relative group">
                     <button className="px-4 py-2">Plantarea Copacilor</button>
                     <div className="absolute shadow-lg left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-48 p-4 bg-white text-gh-dark-grey text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <img src="/planteaza-copaci.jpg" alt="Public Transport" className="mb-2 rounded-md" />
+                      <Image src="/planteaza-copaci.jpg" alt="Public Transport" className="mb-2 rounded-md" width={160} height={206} />
                       <p className='text-base leading-4'>Plantarea copacilor ajută la purificarea aerului și la reducerea emisiilor de CO2.</p>
                     </div>
                   </div>
@@ -126,21 +126,21 @@ Pentru a combate acest fenomen, poți face câteva schimbări simple în viața 
                 <div className="relative group">
                     <button className="px-4 py-2">Utilizarea Detergenților Biodegradabili</button>
                     <div className="absolute shadow-lg left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-48 p-4 bg-white text-gh-dark-grey text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <img src="/folosirea-detergentilor-biodegradabili.jpg" alt="Public Transport" className="mb-2 rounded-md" />
+                      <Image src="/folosirea-detergentilor-biodegradabili.jpg" alt="Public Transport" className="mb-2 rounded-md" width={160} height={206} />
                       <p className='text-base leading-4'>Folosirea detergenților biodegradabili și fără substanțe chimice toxice ajută la protejarea surselor de apă.</p>
                     </div>
                   </div>
                   <div className="relative group">
                     <button className="px-4 py-2">Mai puține pesticide și îngrășăminte</button>
                     <div className="absolute shadow-lg left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-48 p-4 bg-white text-gh-dark-grey text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <img src="/mai-putine-pesticide-si-ingrasaminte.jpg" alt="Public Transport" className="mb-2 rounded-md" />
+                      <Image src="/mai-putine-pesticide-si-ingrasaminte.jpg" alt="Public Transport" className="mb-2 rounded-md" width={160} height={206} />
                       <p className='text-base leading-4'>Minimizarea utilizării produselor chimice în agricultură scade riscul de contaminare a apei prin infiltrarea lor în sol și râuri.</p>
                     </div>
                   </div>
                   <div className="relative group">
                     <button className="px-4 py-2">Reducerea consumului de plastic</button>
                     <div className="absolute shadow-lg left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-48 p-4 bg-white text-gh-dark-grey text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <img src="/reducerea-utilizarii-plasticului.jpg" alt="Public Transport" className="mb-2 rounded-md" />
+                      <Image src="/reducerea-utilizarii-plasticului.jpg" alt="Public Transport" className="mb-2 rounded-md" width={160} height={206} />
                       <p className='text-base leading-4'>Evitarea produselor din plastic și utilizarea materialelor reutilizabile previn acumularea acestora în ape, protejând fauna marină și calitatea apei.</p>
                     </div>
                   </div>

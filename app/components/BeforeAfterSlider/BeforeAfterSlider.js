@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from 'react';
 import styles from './BeforeAfterSlider.module.css';
+import Image from 'next/image';
 
 export default function BeforeAfterSlider({ beforeImage, afterImage }) {
   const [sliderPosition, setSliderPosition] = useState(50); // Start with the slider in the middle
@@ -32,7 +33,7 @@ export default function BeforeAfterSlider({ beforeImage, afterImage }) {
       onTouchMove={handleTouchMove}
     >
       <div className={styles.imageWrapper}>
-        <img src={beforeImage} className={styles.image} alt="Before" />
+        <Image src={beforeImage} className={styles.image} alt="Before" width={1200} height={800} />
         <div
           className={styles.afterImageContainer}
           style={{ width: `${sliderPosition}%`, backgroundImage: `url(${afterImage})` }}

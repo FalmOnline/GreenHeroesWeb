@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'greenheroes.falm.ro',
+            hostname: 'admin.green-heroes.info',
             port: '',
             pathname: '/**',
           },

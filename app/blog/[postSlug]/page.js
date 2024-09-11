@@ -21,16 +21,21 @@ export default async function Post({ params }) {
 
 
   return (
-    <div>
+    <div className="mb-12">
       <article>
       <section 
-          className="hero-area h-[60vh] min-h-[30rem] bg-cover bg-center" style={{ backgroundImage: `url(${imageUrl})` }}>
+          className="hero-area h-[60vh] min-h-[30rem] bg-cover bg-center flex items-center relative mb-12" style={{ backgroundImage: `url(${imageUrl})` }}>
+             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+              <div className="lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto relative z-10">
+                <h1 className="text-white">{title}</h1>
+                <div className="pb-4 text-slate-100 z-10">
+                  Publicat de GreenHeroes, în data de <Date dateString={ modified } />
+                </div>
+              </div>
           </section>
-          <section>
-          <h1>{title}</h1>
-          <div className="pb-4 text-slate-100 z-10">
-            Posted by GreenHeroes, last updated on <Date dateString={ modified } />
-          </div>
+          <section className="lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto">
+
+
           <div dangerouslySetInnerHTML={{ __html: excerpt }} />
           <div dangerouslySetInnerHTML={{ __html: content }} />
         </section>

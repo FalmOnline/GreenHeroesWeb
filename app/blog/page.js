@@ -7,6 +7,7 @@ import { getPostList, getCategorySlugs } from "@/lib/posts"; // Import getCatego
 import Date from "../components/Date";
 import LoadMore from "../components/LoadMore";
 
+
 export default function Blog() {
   const [posts, setPosts] = useState([]);
   const [categories, setCategories] = useState([]); // State to hold categories
@@ -26,7 +27,7 @@ export default function Blog() {
   }
 
   return (
-    <main>
+    <main className="mb-12">
       {/* Banner */}
       <div className="bg-gh-green flex items-center justify-center mb-12  flex-col">
         <div className="container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto h-[380px] flex flex-col justify-center p-8">
@@ -37,7 +38,7 @@ export default function Blog() {
       <div className="container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto flex">
       {/* Render the categories menu */}        
         <nav className="w-3/12">
-          <ul className="flex [&>li]:list-none flex-col">
+          <ul className="flex [&>li]:list-none [&>li>a]:no-underline flex-col">
             {categories.map((category) => (
               <li className="ml-0 mr-0" key={category.slug}>
                 <Link href={`/blog/category/${category.slug}`}>
@@ -50,7 +51,7 @@ export default function Blog() {
         <div className="w-9/12">
           {/* Render the posts */}
           {posts.nodes.map((post) => (
-            <div key={post.slug} className="grid grid-cols-5 gap-6 mb-4">
+            <div key={post.slug} className="grid grid-cols-5 gap-6 mb-12">
               <div className="col-span-2">
                 {post.featuredImage && post.featuredImage.node && post.featuredImage.node.mediaDetails && post.featuredImage.node.mediaDetails.sizes && post.featuredImage.node.mediaDetails.sizes.length > 0 && (
                   <Image className="w-full"
@@ -69,11 +70,11 @@ export default function Blog() {
                 </h2>
                 <div className="flex gap-4 pb-2">
                   <div className="text-gh-medium-grey">
-                    Published on <Date dateString={post.date} />
+                    Publicat în <Date dateString={post.date} />
                   </div>
                   <div className="text-gh-medium-grey">&#9675;</div>
                   <div className="text-gh-medium-grey">
-                    Posted under {
+                    În categoria {
                       post.categories.nodes.map((category) => (
                         <Link className="text-gh-medium-grey" href={`/blog/category/${category.slug}`} key={category.slug}>{category.name}</Link>
                       ))

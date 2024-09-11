@@ -51,16 +51,16 @@ export default function LoadMore({ posts, setPosts, taxonomy = null }) {
   useEffect(() => {
     // Update the button state if the posts prop changes
     if (posts.pageInfo.hasNextPage) {
-      setButtonText('Load more posts');
+      setButtonText('Mai multe articole');
       setButtonDisabled(false);
     } else {
-      setButtonText('No more posts to load');
+      setButtonText('Ai vizualizat toate articolele');
       setButtonDisabled(true);
     }
   }, [posts]);
 
   const handleOnClick = async () => {
-    setButtonText('Loading...');
+    setButtonText('Încărcăm articolele...');
     setButtonDisabled(true);
 
     // Pass the taxonomy filter if provided
@@ -74,10 +74,10 @@ export default function LoadMore({ posts, setPosts, taxonomy = null }) {
     setPosts(updatedPosts);
 
     if (morePosts.pageInfo.hasNextPage) {
-      setButtonText('Load more posts');
+      setButtonText('Mai multe articole');
       setButtonDisabled(false);
     } else {
-      setButtonText('No more posts to load');
+      setButtonText('Ai vizualizat toate articolele');
       setButtonDisabled(true);
     }
   };

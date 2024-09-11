@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-    <footer className="bg-[url('/bg-pamant-gri-si-verde.svg')] bg-no-repeat bg-cover relative z-30">
+    <footer className="bg-[url('/bg-pamant-gri-si-verde.svg')] bg-no-repeat bg-cover relative z-30 border-t border-gh-grey-buttons">
         <div className="container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto flex flex-col">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 pb-8 px-3">
                 <div className="text-center md:text-left">

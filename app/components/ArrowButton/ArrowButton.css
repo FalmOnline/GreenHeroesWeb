@@ -1,4 +1,8 @@
 button.arrow {
+    text-wrap: wrap;
+}
+
+button.arrow {
     padding: 0;
     background-color: transparent;
 }
@@ -6,4 +10,6 @@ button.arrow {
 button.arrow:hover {
     color: var(--green-dark)
 }
+
+
 

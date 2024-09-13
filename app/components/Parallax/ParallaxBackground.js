@@ -1,43 +1,3 @@
-// import React, { useEffect, useRef } from 'react';
-// import './ParallaxBackground.css'; // Import the CSS file
-
-// const ParallaxBackground = ({ imageSrc, speed = 0.5, initialOffset = 140 }) => {
-//   const parallaxRef = useRef(null);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (parallaxRef.current && window.innerWidth > 768) {
-//         const offset = window.scrollY;
-//         parallaxRef.current.style.transform = `translateY(${offset * speed}px)`;
-//       }
-//     };
-
-//     // Initial transform and background position
-//     if (parallaxRef.current && window.innerWidth > 768) {
-//       parallaxRef.current.style.transform = `translateY(${initialOffset}px)`;
-//       parallaxRef.current.style.backgroundPosition = `center ${initialOffset}px`;
-//     }
-
-//     window.addEventListener('scroll', handleScroll, { passive: true });
-
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, [speed, initialOffset]);
-
-//   return (
-//     <div
-//       ref={parallaxRef}
-//       className="parallax-background"
-//       style={{
-//         backgroundImage: `url(${imageSrc})`,
-//       }}
-//       aria-hidden="true" // Accessibility: hides decorative images from screen readers
-//     />
-//   );
-// };
-
-// export default ParallaxBackground;
 
 import React, { useEffect, useRef } from 'react';
 import './ParallaxBackground.css'; // Import the CSS file
@@ -53,12 +13,27 @@ const ParallaxBackground = ({ imageSrc, speed = 0.5, initialOffset = 0, backgrou
       }
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    const handleResize = () => {
+      // Reapply initial offset based on screen size
+      if (parallaxRef.current) {
+        parallaxRef.current.style.transform = `translateY(${window.scrollY * speed}px)`;
+        parallaxRef.current.style.backgroundPosition = `${backgroundPosition} ${initialOffset}px`;
+      }
+    };
 
+    // Add event listener for scrolling and resizing
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleResize);
+
+    // Initial setup
+    handleResize();
+
+    // Clean up event listeners on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
-  }, [speed]);
+  }, [speed, initialOffset, backgroundPosition]);
 
   return (
     <div
@@ -66,8 +41,7 @@ const ParallaxBackground = ({ imageSrc, speed = 0.5, initialOffset = 0, backgrou
       className="parallax-background"
       style={{
         backgroundImage: `url(${imageSrc})`,
-        backgroundPosition: `${backgroundPosition} ${initialOffset}px`,
-        transform: `translateY(${initialOffset}px)`, // Apply inline style immediately
+        backgroundPosition: `${backgroundPosition} ${initialOffset}px`, // Apply background position directly
       }}
       aria-hidden="true" // Accessibility: hides decorative images from screen readers
     />
@@ -75,4 +49,3 @@ const ParallaxBackground = ({ imageSrc, speed = 0.5, initialOffset = 0, backgrou
 };
 
 export default ParallaxBackground;
-

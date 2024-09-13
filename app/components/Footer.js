@@ -5,17 +5,17 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-    <footer className="bg-[url('/bg-pamant-gri-si-verde.svg')] bg-no-repeat bg-cover relative z-30 border-t border-gh-grey-buttons">
+    <footer className="bg-[url('/bg-pamant-gri-si-verde.svg')] bg-no-repeat bg-contain relative z-30 border-t border-gh-grey-buttons">
         <div className="container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto flex flex-col">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 pb-8 px-3">
                 <div className="text-center md:text-left">
-                    <div className="mb-8">
+                    <div className="mb-8 text-center">
                     <Link href="/">
-                            <Image src={logo} alt="Green Heroes logo" width={111} height={51}></Image>
+                          <Image className="text-center md:text-left md:mx-0 block mx-auto" src={logo} alt="Green Heroes logo" width={111} height={51}></Image>
 					</Link>
                     </div>
                     <nav>
-                        <ul className="[&>li]:list-none [&>li]:text-base">
+                        <ul className="[&>li]:list-none [&>li]:text-base [&>li>a:hover]:text-gh-dark-green">
                         <li><Link className='no-underline' href="/despre-noi">Despre noi</Link></li>
                             <li><Link className='no-underline' href="/blog">Resurse educaționale</Link></li>
                             <li><Link className='no-underline' href="/contact">Contact</Link></li>
@@ -45,11 +45,11 @@ export default function Footer() {
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-center border-t border-line-grey pt-6 pb-8 px-3">
                 {/* <!-- Credentials --> */}
-                <div className="text-xs mt-4 sm:mt-0 flex items-center gap-6">
+                <div className="text-sm md:text-xs mt-4 sm:mt-0 flex md:flex-row flex-col items-center gap-6 w-64 md:w-full">
                     Creat de: 
-                    <Link className="flex text-gh-medium-grey items-center" href="https://asociatiauman.ro" target="_blank"><Image src="/Logo-UMAN.png" alt="logo asociatia uman" width={60} height={56} />Asociația Uman</Link>
-                    <p className="text-gh-medium-grey font-light">|</p>
-                    <Link className="flex text-gh-medium-grey items-center gap-2" href="https://www.saguna.ro"><Image src="/colegiul-national-andrei-saguna-brasov-logo.png" alt="logo asociatia uman" width={60} height={56} />Colegiul Național &quot;Andrei Șaguna&quot;, Brașov</Link>
+                    <Link className="flex text-gh-medium-grey items-center w-full md:w-auto no-underline" href="https://asociatiauman.ro" target="_blank"><Image className="w-12 md:w-auto mr-2" src="/Logo-UMAN.png" alt="logo asociatia uman" width={60} height={56} />Asociația Uman</Link>
+                    <p className="hidden md:block text-gh-medium-grey font-light">|</p>
+                    <Link className="flex text-gh-medium-grey items-center gap-2 no-underline" href="https://www.saguna.ro"><Image src="/colegiul-national-andrei-saguna-brasov-logo.png" alt="logo asociatia uman" width={60} height={56} />Colegiul Național &quot;Andrei Șaguna&quot; Brașov</Link>
                 </div>
             </div>
         </div>

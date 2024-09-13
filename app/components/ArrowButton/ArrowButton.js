@@ -16,8 +16,8 @@ export default function ArrowButton({ text, href }) {
   };
 
   return (
-    <button className='arrow flex justify-center font-bold' onClick={handleClick}>
-      <span className='flex'><Image src="/arrow-right.svg" alt="iconita sageata drepta" width={18} height={18} /> </span> 
+    <button className='arrow flex justify-start sm:justify-center lg:justify-center font-bold text-base text-left leading-5 w-11/12 lg:w-auto' onClick={handleClick}>
+      <span className='flex pr-2'><Image src="/arrow-right.svg" alt="iconita sageata drepta" width={18} height={18} /> </span> 
       {text}
     </button>
   );

@@ -1,65 +1,98 @@
+import Link from "next/link";
+
 export default function PoliticaConfidentialitate() {
     return (
       <main className="flex flex-col justify-center mb-8">
-        {/* Banner */}
-        <div className="bg-gh-green flex items-center justify-center mb-12  flex-col">
-          <div className="container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto h-[380px] flex flex-col justify-center p-8">
-          <h1>Politica de confidențialitate</h1>
+        <article>
+          {/* Banner */}
+          <div className="bg-gh-green flex items-center justify-center mb-12  flex-col">
+            <div className="container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto h-[380px] flex flex-col justify-center p-8">
+            <h1>Politica de confidențialitate</h1>
+            </div>
           </div>
-        </div>
-        {/* Content */}
-        <div className="flex flex-col gap-4 justify-center items-center container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto">
-				  <div className="container p-8">
-            <h3>Asociația Uman participă la implementarea proiectului „Green Heroes”</h3>
-                      <h4>În acord cu scopul și obiectivele noastre privind protecția mediului, ne dorim să asigurăm o educație și conștientizare adecvată a tinerilor în vederea dezvoltării unei abordări unitare și responsabile față de mediul înconjurător, Asociația Uman va participa la implementarea proiectului „Green Heroes”.</h4>
-                      <h5>„Proiect finanțat din Fondul pentru mediu, prin Administraţia Fondului pentru Mediu, în cadrul Programului vizând educaţia şi conştientizarea publicului privind protecţia mediului”, Nr. dosar proiect ECPM01202370100210 – 100 puncte<br /></h5>
-            
-                      <p>Programul de finanțare: Programul vizând educaţia şi conştientizarea publicului privind protecţia mediului<br />Solicitantul proiectului: ASOCIAȚIA UMAN<br />Partener: COLEGIUL NAȚIONAL „ANDREI ȘAGUNA” BRAȘOV</p>
-            
-                      <p>Perioada de implementare a proiectului va fi de 18 luni de la data semnării Contractului de finanțare.<br />Valoarea totală a proiectului este de 499.482,00 lei.<br />Valoarea cofinanțării este de 0 lei.<br />Valoarea eligibilă nerambursabilă din bugetul național este de 499.482,00 lei.<br />Locație de implementare: Comuna Cricău, Județul Alba și Municipiul Brașov, Județul Brașov<br /></p>
-            
-                      <p><strong>Scopul proiectului</strong>: este de a dezvolta o generație educată și implicată în rezolvarea problemelor de mediu – Green Heroes.</p>
-            
-                      <h2><strong>Obiectiv general:</strong></h2>
-            
-                      <p>Dezvoltarea și implementare a 12 campanii de educație și conștientizare cu privire la problemele de mediu, într-un interval de 18 luni, pentru minim 504 tineri cu vârsta între 6 și 18 ani, de la Colegiul Național „Andrei Șaguna” Brașov, pentru a-i încuraja să adopte un comportament mai responsabil față de mediul înconjurător.<br /><br /></p>
-            
-                      <h2>Obiective specifice:</h2>
-            
-            
-                      <p><strong>OS1</strong>. Elaborarea, diseminarea și aplicarea de către parteneri pe toată durata implementării proiectului a unui Manual de proceduri de management pentru proiectul Green Heroes care să cuprindă proceduri clare și detaliate în ceea ce privește comunicarea internă și externă, monitorizarea și evaluarea, managementul resurselor umane, managementul riscurilor, managementul financiar-avansul și mecanismul de decontare și managementul calității, derularea achizițiilor.</p>
-            
-                      <p><strong>OS2</strong>. Planificarea, organizarea, implementarea și raportarea a 12 campanii de educație și conștientizare în domeniul mediului, cu durata de implementare de minim 1 lună-maxim 2 luni, într-o perioadă de 18 luni, luând în considerare perioadele cu intensitate redusă a activităților școlare, sărbători și perioadele de vacanță.</p>
-            
-                      <p><strong>OS3</strong>. Elaborarea și actualizarea lunară a unui Plan de activități pentru organizarea, desfășurarea și raportarea Campaniilor de educație și conștientizare, care să includă întâlniri de lucru cu experții, planificarea detaliată a temei, activităților, participanților, duratei, responsabililor, resurselor etc.</p>
-            
-                      <p><strong>OS4</strong>. Informarea și promovarea în scopul implicării a 504 tineri cu vârsta între 6 și 18 ani în activitățile proiectului, inclusiv prin intermediul website-ului, rețelelor de socializare și discuțiilor formale și informale cu părinții și participanții, în 18 luni.</p>
-            
-                      <p><strong>OS5</strong>. Recrutarea Grupului Țintă (504 tineri cu vârsta între 6 și 18 ani) în 18 luni, prin obținerea acordului părinților pentru participarea la activitățile proiectului, obținerea acordului de prelucrare a datelor cu caracter personal și întocmirea fișelor de participare cu informații relevante.</p>
-            
-            
-                      <p><strong>OS6</strong>. Participarea în 18 luni a minim 504 tineri cu vârsta între 6 și 18 ani în cadrul celor 12 campanii de educație și conștientizare, cu minim 42 de tineri implicați în fiecare campanie.</p>
-            
-                      <p><strong>OS7</strong>. Derularea celor 12 campanii de educație și conștientizare pentru minim 504 tineri cu vârsta între 6 și 18 ani, în 18 luni, care să includă activități teoretice, activități practice (dacă este cazul), 12 excursii de educație și conștientizare, precum și activități post-implementare ale campaniilor.</p>
-            
-                      <p><strong>OS8</strong>. Minim 504 tineri, cu vârsta între 6 și 18 ani vor dobândi, pe o perioadă de 18 luni, dobândesc competențe practice în montarea, programarea și utilizarea Robotului – echipamentul inovativ și sustenabil didactic – glisor deșeuri și vor corela competențele practice cu cele teoretice privind principiile de dezvoltare durabilă, reducerea emisiilor de carbon și sustenabilitatea activităților de zi cu zi.</p>
-            
-                      <p><strong>OS9</strong>. Monitorizarea și evaluarea creșterii gradului de educație și conștientizare a minim 504 tineri cu privire la problemele de mediu, în urma desfășurării celor 12 campanii de educație și conștientizare în domeniul mediului, în 18 luni.</p>
-            
-                      <p><strong>OS10</strong>. Educarea și conștientizarea în 18 luni, a minim 504 tineri cu vârsta între 6 și 18 ani în utilizarea aplicației GreenHeroes privind protejarea mediului și determinarea acestora să ia măsuri concrete pentru protejarea mediului înconjurător și pentru a crea o comunitate de utilizatori interesați de identificarea și rezolvarea problemelor de mediu.</p>
-            
-            
-                      <h2>Rezultatele asumate:</h2>
-            
-                      <ol type="1"><li><strong>Rezultatul 1</strong>&nbsp; – 1 Plan de implementare realizat și actualizat lunar,</li><li><strong>Rezultatul 2</strong> – 1 Manual de proceduri de management realizat și implementat (comunicarea internă și externă, monitorizarea și evaluarea, managementul resurselor umane, managementul riscurilor, managementul financiar, mecanismul de decontare și managementul calității, achiziții),</li><li><strong>Rezultatul 3</strong> – minim 504 părinți și participanți informați în scopul implicării în activitățile proiectului a GT,</li><li><strong>Rezultatul 4</strong> – minim 504 tineri cu vârsta între 6 și 18 ani recrutați,</li><li><strong>Rezultatul 5</strong> – 12 campanii de educație și conștientizare implementate cu minim 504 participanți (minim 42/campanie),</li><li><strong>Rezultatul 6</strong> – 12 probleme de mediu abordate prin campaniile de educație și conștientizare,</li><li><strong>Rezultatul 7</strong> – 12 excursii de informare și conștientizare desfășurate,</li><li><strong>Rezultatul 8</strong> – minim 504 membrii GT instruiți privind montarea, programarea și utilizarea Robotului – echipamentul inovativ și sustenabil didactic – glisor deșeuri,</li><li><strong>Rezultatul 9</strong> – minim 504 chestionare pre și post-campanie aplicate pentru monitorizarea și evaluarea educației și conștientizării în domeniul mediului,</li><li><strong>Rezultatul 10</strong> – minim 504 membrii GT – utilizatori instruiți în 18 luni în utilizarea aplicației GreenHeroes privind protejarea mediului,</li><li><strong>Rezultatul 11</strong> – Rezultatul 11 – 1 aplicație realizată, funcțională și utilizată de toți membrii GT în 18 luni.</li></ol>
-            
-                      <p>Lista cererilor aprobate:<br /><a href="https://www.afm.ro/main/programe/eco_civic/2024/educatie_protectia_mediului_cereri_aprobate-2024_04_03.pdf">https://www.afm.ro/main/programe/eco_civic/2024/educatie_protectia_mediului_cereri_aprobate-2024_04_03.pdf</a></p>
-            
-            
-                      <p><strong>DATE CONTACT:</strong><br />Asociația Uman<br />0756585150</p>
-          </div>
-
-        </div>
+          {/* Content */}
+          <div className="flex flex-col gap-4 justify-center items-center container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto">
+                    <div className="container p-8">
+              <div className="privacy-policy-container">
+                <p><strong>Ultima actualizare:</strong> 25-Aug-2024 </p>
+                <section>
+                  <h5>1. Colectarea Datelor Personale</h5>
+                  <p>Colectăm date personale în următoarele moduri:</p>
+                  <ul>
+                    <li><strong>Formulare de contact:</strong> Nume, prenume, adresa de e-mail, număr de telefon și alte informații pe care le oferi voluntar.</li>
+                    <li><strong>Comentarii:</strong> Colectăm informațiile introduse în formularul de comentarii, adresa IP și șirul agenților utilizator ai browser-ului pentru a preveni spam-ul.</li>
+                    <li><strong>Cookie-uri și tehnologii similare:</strong> Website-ul folosește cookie-uri pentru a personaliza experiența utilizatorului și a analiza traficul.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h5>2. Scopurile Prelucrării Datelor</h5>
+                  <p>Utilizăm datele tale personale pentru:</p>
+                  <ul>
+                    <li>A răspunde la întrebările și solicitările trimise prin formularul de contact;</li>
+                    <li>A monitoriza și preveni fraudele și comportamentele abuzive (inclusiv spam-ul);</li>
+                    <li>A îmbunătăți funcționalitatea site-ului și experiența utilizatorului.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h5>3. Temeiul Legal al Prelucrării</h5>
+                  <p>Prelucrăm datele personale pe baza următoarelor temeiuri legale:</p>
+                  <ul>
+                    <li><strong>Consimțământ:</strong> În cazul în care ai oferit consimțământul pentru anumite scopuri, cum ar fi abonarea la newsletter.</li>
+                    <li><strong>Interes legitim:</strong> Pentru a îmbunătăți serviciile și a asigura securitatea website-ului.</li>
+                    <li><strong>Obligații legale:</strong> Pentru a respecta cerințele legale în vigoare.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h5>4. Drepturile Utilizatorilor</h5>
+                  <p>Conform GDPR, ai următoarele drepturi în legătură cu datele tale personale:</p>
+                  <ul>
+                    <li><strong>Dreptul de acces:</strong> Poți solicita informații despre datele tale stocate de noi.</li>
+                    <li><strong>Dreptul la rectificare:</strong> Poți cere corectarea datelor inexacte.</li>
+                    <li><strong>Dreptul la ștergere:</strong> Ai dreptul să soliciți ștergerea datelor, cu anumite excepții.</li>
+                    <li><strong>Dreptul la restricționarea prelucrării:</strong> Poți cere limitarea modului în care îți procesăm datele.</li>
+                    <li><strong>Dreptul la portabilitatea datelor:</strong> Poți cere transferul datelor către un alt operator de date.</li>
+                    <li><strong>Dreptul de a depune o plângere:</strong> Ai dreptul de a depune o plângere la autoritatea de supraveghere (<Link href="https://www.dataprotection.ro/" target="_blank">ANSPDCP</Link> în România).</li>
+                  </ul>
+                </section>
+                <section>
+                  <h5>5. Partajarea Datelor</h5>
+                  <p>Nu vom partaja datele tale personale cu terți fără consimțământul tău, cu excepția cazurilor prevăzute de lege sau necesare pentru furnizarea serviciilor noastre (de exemplu, servicii de hosting, procesare plăți).</p>
+                </section>
+                <section>
+                  <h5>6. Cookie-uri</h5>
+                  <p>Utilizăm cookie-uri pentru a:</p>
+                  <ul>
+                    <li>Îmbunătăți funcționalitatea site-ului;</li>
+                    <li>Furniza conținut personalizat;</li>
+                    <li>Analiza traficul și comportamentul utilizatorilor.</li>
+                  </ul>
+                  <p>Te rugăm să consulți <a href="/politica-de-cookies">Politica de Cookie-uri</a> pentru mai multe detalii.</p>
+                </section>
+                <section>
+                  <h5>7. Securitatea Datelor</h5>
+                  <p>Implementăm măsuri tehnice și organizaționale adecvate pentru a proteja datele personale împotriva accesului neautorizat, pierderii, distrugerii sau dezvăluirii accidentale. Accesul la datele personale este limitat doar la personalul autorizat care are nevoie să prelucreze datele pentru scopuri legitime.</p>
+                </section>
+                <section>
+                  <h5>8. Durata Păstrării Datelor</h5>
+                  <p>Păstrăm datele tale personale doar atât timp cât este necesar pentru scopurile menționate în această politică sau conform cerințelor legale.</p>
+                </section>
+                <section>
+                  <h5>9. Modificări ale Politicii de Confidențialitate</h5>
+                  <p>Ne rezervăm dreptul de a actualiza această politică de confidențialitate periodic. Orice modificare va fi publicată pe această pagină și te vom notifica printr-un mesaj pe site dacă este cazul.</p>
+                </section>
+                <section>
+                  <h5>10. Contact</h5>
+                  <p>Pentru orice întrebări sau solicitări legate de protecția datelor tale personale, ne poți contacta la:</p>
+                  <ul>
+                    <li><strong>Email:</strong> contact@asociatiauman.ro</li>
+                    <li><strong>Telefon:</strong>+ 0756 585 150</li>
+                    <li><strong>Adresă:</strong> Sat Tibru, Nr. 172, Comuna Cricău, Județul Alba, cod 517267</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+            </div>
+        </article>
       </main>
     );
   }

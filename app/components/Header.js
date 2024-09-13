@@ -65,8 +65,8 @@ export default function Header({ className = '' }) {
                     {/* <!-- Mobile Navigation --> */}
                     <nav className={`transition-transform duration-500 ease-in-out transform w-full z-50 ${menuOpen ? 'absolute top-[70px] translate-y-0 opacity-100 h-screen inset-0' : 'translate-y-0 h-0'}`}>
                         <div className={`transition-all duration-500 ease-in-out bg-gh-green-shade  ${menuOpen ? 'h-screen w-screen opacity-100 absolute inset-0' : 'h-0 opacity-0 w-screen absolute inset-0'}`}></div>
-                        <ul className={`meniu-mobil menu z-20 fixed top-0 left-0 w-full p-8 [&>li]:list-none [&>li]:text-center [&>li>a]:no-underline [&>li>a]:text-red-700 [&>li>a:hover]:text-gh-dark-green ${menuOpen ? 'opacity-100' : 'opacity-0 h-0'}`}>
-                            <li className={`transition-all duration-700 ease-in-out no-underline  ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link className="no-underline" href="/despre-noi" onClick={toggleMenu}>Despre noi</Link></li>
+                        <ul className={`meniu-mobil menu z-20 fixed top-0 left-0 w-full p-8 [&>li]:list-none [&>li]:text-center [&>li>a]:no-underline [&>li]:text-lg [&>li]:leading-8 [&>li>a:hover]:text-gh-dark-green ${menuOpen ? 'opacity-100' : 'opacity-0 h-0'}`}>
+                            <li className={`transition-all duration-700 ease-in-out no-underline  ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link className="no-underline hover:text-gh-dark-green" href="/despre-noi" onClick={toggleMenu}>Despre noi</Link></li>
                             <li className={`transition-all duration-700 ease-in-out no-underline  ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link className="no-underline" href="/blog" onClick={toggleMenu}>Resurse educaționale</Link></li>
                             <li className={`transition-all duration-1000 ease-in-out no-underline  ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link className="no-underline" href="/contact" onClick={toggleMenu}>Contact</Link></li>
                         </ul>

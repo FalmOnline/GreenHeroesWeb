@@ -843,3 +843,12 @@ article ul, article ol {
 .wp-block-gallery figcaption {
 	display: none; /* Hide the caption */
 }
+
+/* Cookie page */
+a.cky-banner-element {
+	cursor: pointer;
+}
+
+button {
+	text-wrap: wrap;
+}

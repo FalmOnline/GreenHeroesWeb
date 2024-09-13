@@ -11,7 +11,7 @@ export default async function Post({ params }) {
   const postData = await getSinglePost(postSlug);
 
   if (!postData) {
-    return <div>Loading...</div>;
+    return <div className="hero-area h-[60vh] min-h-[30rem] bg-cover bg-center flex items-center relative mb-12">Loading...</div>;
   }
 
   const { title, excerpt, content, featuredImage, modified } = postData;

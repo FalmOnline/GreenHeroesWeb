@@ -36,13 +36,13 @@ const Home = () => {
       {/* Banner */}
       <section className="relative height-hero overflow-hidden w-screen">
         <div className="container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto px-8 overflow-hidden z-20 relative flex flex-col items-center text-center">
-            <h1 className="w-full sm:ml-4 md:ml-0 h-2/5 md:h-2/5 justify-center flex z-20 mt-24 text-gh-dark-green 2xl:text-9xl xl:text-8xl">
+            <h1 className="w-full sm:ml-4 md:ml-0 h-2/5 md:h-2/5 justify-center flex z-20 mt-12 2xl:mt-24 xl:mt-16 text-gh-dark-green 2xl:text-9xl lg:text-8xl sm:text-8xl text-6xl leading-none">
               GREEN HEROES
             </h1>
-            <h3 className="w-full sm:ml-4 md:ml-0 h-3/5 md:h-3/5 text-center z-20 text-gh-dark-grey font-light 2xl:text-5xl xl:text-4xl mb-8">
+            <h3 className="w-full sm:ml-4 md:ml-0 h-3/5 md:h-3/5 text-center z-20 text-gh-dark-grey font-light 2xl:text-5xl lg:text-4xl 2xl:mb-8 sm:text-5xl text-4xl mb-4 mt-4 ">
               Acționează local, să salvezi global
             </h3>
-            <p className="w-9/12 sm:ml-4 md:ml-0 h-4/5 md:h-4/5 z-20 text-lg">
+            <p className="w-9/12 sm:ml-4 md:ml-0 h-4/5 md:h-4/5 z-20 2xl:text-lg lg:text-base">
               Planeta este puternic afectată de activitățile oamenilor și are nevoie de ajutor. Descoperă cum să devii Green Hero, salvează lumea și adu-ți prietenii în echipa ta de supereroi eco!
             </p>
         </div>

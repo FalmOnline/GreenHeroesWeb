@@ -39,7 +39,7 @@ export default function Header({ className = '' }) {
                     <nav>
                         <ul className="[&>li]:list-none [&>li]:text-base flex justify-center [&>li>a]:text-black [&>li>a:hover]:text-gh-dark-grey [&>li>a]:px-4">
                             <li className='no-underline'><Link className='no-underline' href="/despre-noi">Despre noi</Link></li>
-                            <li className='no-underline'><Link className="bg-gh-green p-3 rounded-3xl no-underline" href="/blog">Resurse educaționale</Link></li>
+                            <li className='no-underline text-red-700'><Link className="bg-gh-green p-3 rounded-3xl no-underline" href="/blog">Resurse educaționale</Link></li>
                             <li className='no-underline'><Link className='no-underline' href="/contact">Contact</Link></li>
                         </ul>
                     </nav>
@@ -65,10 +65,10 @@ export default function Header({ className = '' }) {
                     {/* <!-- Mobile Navigation --> */}
                     <nav className={`transition-transform duration-500 ease-in-out transform w-full z-50 ${menuOpen ? 'absolute top-[70px] translate-y-0 opacity-100 h-screen inset-0' : 'translate-y-0 h-0'}`}>
                         <div className={`transition-all duration-500 ease-in-out bg-gh-green-shade  ${menuOpen ? 'h-screen w-screen opacity-100 absolute inset-0' : 'h-0 opacity-0 w-screen absolute inset-0'}`}></div>
-                        <ul className={`meniu-mobil menu z-20 fixed top-0 left-0 w-full p-8 [&>li]:list-none [&>li]:text-center  [&>li>a]:text-black [&>li>a:hover]:text-gh-dark-green ${menuOpen ? 'opacity-100' : 'opacity-0 h-0'}`}>
-                            <li className={`transition-all duration-700 ease-in-out   ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link href="/despre-noi" onClick={toggleMenu}>Despre noi</Link></li>
-                            <li className={`transition-all duration-700 ease-in-out   ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link href="/blog" onClick={toggleMenu}>Resurse educaționale</Link></li>
-                            <li className={`transition-all duration-1000 ease-in-out   ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link href="/contact" onClick={toggleMenu}>Contact</Link></li>
+                        <ul className={`meniu-mobil menu z-20 fixed top-0 left-0 w-full p-8 [&>li]:list-none [&>li]:text-center [&>li>a]:no-underline [&>li>a]:text-red-700 [&>li>a:hover]:text-gh-dark-green ${menuOpen ? 'opacity-100' : 'opacity-0 h-0'}`}>
+                            <li className={`transition-all duration-700 ease-in-out no-underline  ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link className="no-underline" href="/despre-noi" onClick={toggleMenu}>Despre noi</Link></li>
+                            <li className={`transition-all duration-700 ease-in-out no-underline  ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link className="no-underline" href="/blog" onClick={toggleMenu}>Resurse educaționale</Link></li>
+                            <li className={`transition-all duration-1000 ease-in-out no-underline  ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link className="no-underline" href="/contact" onClick={toggleMenu}>Contact</Link></li>
                         </ul>
                     </nav>
                 </div>

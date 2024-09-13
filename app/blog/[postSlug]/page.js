@@ -16,7 +16,7 @@ export default async function Post({ params }) {
 
   const { title, excerpt, content, featuredImage, modified } = postData;
   // Select the largest size available, assuming "full" is the name of the largest size
-  const largeImage = featuredImage?.node?.mediaDetails?.sizes?.find(size => size.name === '2048x2048');
+  const largeImage = featuredImage?.node?.mediaDetails?.sizes?.find(size => size.name === 'full');
   const imageUrl = largeImage?.sourceUrl || '';
 
 

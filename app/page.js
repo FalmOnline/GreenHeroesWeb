@@ -126,7 +126,7 @@ const Home = () => {
                 <ArrowButton text="Citește mai multe despre poluarea apelor" href="/blog/cum-sa-reduci-poluarea-apelor/" />
               </div>
             </div>
-            <div class="w-full h-px bg-gh-medium-grey mx-auto mt-8 mb-1 lg:my-8 justify"></div>
+            <div className="w-full h-px bg-gh-medium-grey mx-auto mt-8 mb-1 lg:my-8 justify"></div>
             <div>
               <h3 className='text-sm mt-2 mb-4 uppercase'>Tips & tricks pentru reducerea poluării:</h3>
               <div className='flex gap-4 flex-wrap'>

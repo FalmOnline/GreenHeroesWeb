@@ -816,8 +816,16 @@ article figure figcaption {
 }
 
 article ul, article ol {
-	margin-left: 1rem;
+	margin-left: 2rem;
 	margin-bottom: 1rem;
+}
+
+article ul li {
+	list-style-type: disc;
+}
+
+article ol li {
+	list-style-type: decimal;
 }
 
 article a:hover {

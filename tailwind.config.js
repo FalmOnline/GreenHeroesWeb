@@ -22,7 +22,10 @@ module.exports = {
         'gh-danger': '#FF4747',
         'gh-info': '#30F2F2',
         'gh-warning': '#F7D764',
-      }
+      },
+      screens: {
+        'xs': '375px',
+      },
     },
   },
   plugins: [],

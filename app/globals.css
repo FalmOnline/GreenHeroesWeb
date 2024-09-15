@@ -820,6 +820,10 @@ article ul, article ol {
 	margin-bottom: 1rem;
 }
 
+article a:hover {
+	color: var(--link-hover);
+}
+
 .wp-block-button {
 	margin-bottom: 1rem;
 }

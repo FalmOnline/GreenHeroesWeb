@@ -47,7 +47,7 @@ export default function Header({ className = '' }) {
             </div>
             {/* <!-- Mobile Menu --> */}
             <div className="lg:hidden bg-white w-screen z-50">
-                <div className="container flex flex-col mx-auto">
+                <div className="px-4 lg:px-0 lg:container flex flex-col mx-auto">
                     {/* <!-- Logo and Hamburger Icon --> */}
                     <div className="flex flex-row justify-between items-center py-3 px-3">
                         <div>
@@ -63,7 +63,7 @@ export default function Header({ className = '' }) {
                         </div>
                     </div>
                     {/* <!-- Mobile Navigation --> */}
-                    <nav className={`transition-transform duration-500 ease-in-out transform w-full z-50 ${menuOpen ? 'absolute top-[70px] translate-y-0 opacity-100 h-screen inset-0' : 'translate-y-0 h-0'}`}>
+                    <nav className={`transition-transform duration-500 ease-in-out transform w-full z-50 ${menuOpen ? 'absolute top-[70px] translate-y-0 opacity-100 h-screen inset-0 pointer-events-auto' : 'translate-y-0 h-0 pointer-events-none'}`}>
                         <div className={`transition-all duration-500 ease-in-out bg-gh-green-shade  ${menuOpen ? 'h-screen w-screen opacity-100 absolute inset-0' : 'h-0 opacity-0 w-screen absolute inset-0'}`}></div>
                         <ul className={`meniu-mobil menu z-20 fixed top-0 left-0 w-full p-8 [&>li]:list-none [&>li]:text-center [&>li>a]:no-underline [&>li]:text-lg [&>li]:leading-8 [&>li>a:hover]:text-gh-dark-green ${menuOpen ? 'opacity-100' : 'opacity-0 h-0'}`}>
                             <li className={`transition-all duration-700 ease-in-out no-underline  ${menuOpen ? 'opacity-100' : 'opacity-0 text-xs'}`}><Link className="no-underline hover:text-gh-dark-green" href="/despre-noi" onClick={toggleMenu}>Despre noi</Link></li>

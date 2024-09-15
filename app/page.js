@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='opacity-20 sm:opacity-100'>
+      <div className='opacity-20 xs:opacity-100'>
         <ParallaxBackground
           imageSrc="/Green-heroes-banner.png"
           speed={0.5}
@@ -38,7 +38,7 @@ const Home = () => {
       {/* Banner */}
       <section className="relative height-hero overflow-hidden w-screen">
         <div className="container lg:max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto px-2 sm:px-8 overflow-hidden z-20 relative flex flex-col items-center text-center">
-            <h1 className="w-full sm:ml-4 md:ml-0 h-2/5 md:h-2/5 justify-center flex z-20 mt-4 xs:mt-12 lg:mt-16 2xl:mt-24 text-gh-dark-green 2xl:text-9xl lg:text-8xl sm:text-7xl text-5xl leading-none">
+            <h1 className="w-full sm:ml-4 md:ml-0 h-2/5 md:h-2/5 justify-center flex z-20 mt-4 xs:mt-[20%] md:mt-12 lg:mt-16 2xl:mt-24 text-gh-dark-green 2xl:text-9xl lg:text-8xl xs:text-7xl text-5xl leading-none">
               GREEN HEROES
             </h1>
             <h3 className="w-full sm:ml-4 md:ml-0 h-3/5 md:h-3/5 text-center z-20 text-gh-dark-grey font-light 2xl:text-5xl lg:text-4xl 2xl:mb-8 sm:text-4xl text-3xl mb-4 mt-4 ">

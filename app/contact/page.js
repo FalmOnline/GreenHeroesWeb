@@ -61,19 +61,19 @@ const ContactForm = () => {
   });
 
   return (
-    <section className="bg-white w-screen h-screen flex flex-col items-center relative">
-      <div className='w-screen h-full absolute z-0'>
+    <section className="bg-white lg:w-screen lg:h-screen flex lg:flex-col items-center relative">
+      <div className='hidden lg:block w-screen h-full lg:absolute z-0'>
         <div className="w-1/2 h-full bg-[url('/bg-contact-page.jpg')] bg-no-repeat bg-cover bg-center"></div>
         <div className='w-1/2'></div>
       </div>
-      <div className='container flex pt-20 z-10'>
-        <div className='w-1/2'>
+      <div className='lg:container 2xl:max-w-screen-xl 3xl:max-w-screen-2xl mx-auto flex flex-col lg:flex-row z-20'>
+        <div className="bg-[url('/bg-contact-page.jpg')] lg:bg-none lg:w-1/2 p-8 h-[380px] flex flex-col justify-center">
          <h1>Contact</h1>
          <p className='mt-8'>🌿 Suntem aici pentru a salva planeta, împreună cu tine! 🌿 <br />
          Ne poți contacta pentru orice întrebare, colaborare sau sugestie.</p>
         </div>
-        <div className='w-1/2 p-10'>
-          <h3 className='pb-4'>Scrie-ne un mesaj:</h3>
+        <div className='lg:w-1/2 p-8 lg:p-10 bg-white'>
+          <h3 className='pb-4 mt-3 leading-none'>Scrie-ne un mesaj:</h3>
           <form className="contact-form flex flex-col gap-3" onSubmit={formik.handleSubmit} noValidate>
             <input
               type="text"
@@ -110,7 +110,7 @@ const ContactForm = () => {
             {formik.touched.message && formik.errors.message ? (
               <div className="error">{formik.errors.message}</div>
             ) : null}
-            <div className="checkbox-group">
+            <div className="checkbox-group mt-3">
               <label>
                 <input
                   type="checkbox"
@@ -134,13 +134,13 @@ const ContactForm = () => {
                   onBlur={formik.handleBlur}
                   checked={formik.values.privacy}
                 />
-                Am citit și sunt de acord ca datele mele să fie prelucrate conform <Link className='ml-1 inline' href="/politica-de-confidentialitate"> Politicii de confidențialitate</Link>.
+                <span>Am citit și sunt de acord ca datele mele să fie prelucrate conform <Link className='ml-1 inline' href="/politica-de-confidentialitate">Politicii de confidențialitate</Link></span>.
               </label>
               {formik.touched.privacy && formik.errors.privacy ? (
                 <div className="error">{formik.errors.privacy}</div>
               ) : null}
             </div>
-            <button type="submit" disabled={status.loading}>
+            <button className="mt-4 mb-12" type="submit" disabled={status.loading}>
               {status.loading ? 'Trimitere...' : 'Trimite mesajul'}
             </button>
           </form>

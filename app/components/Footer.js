@@ -45,11 +45,11 @@ export default function Footer() {
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-center border-t border-line-grey pt-6 pb-8 px-3">
                 {/* <!-- Credentials --> */}
-                <div className="text-sm md:text-xs mt-4 sm:mt-0 flex md:flex-row flex-col items-center gap-6 w-64 md:w-full">
+                <div className="text-sm md:text-xs mt-4 sm:mt-0 flex md:flex-row flex-col items-center gap-6 w-full">
                     Creat de: 
-                    <Link className="flex text-gh-medium-grey items-center w-full md:w-auto no-underline" href="https://asociatiauman.ro" target="_blank"><Image className="w-12 md:w-auto mr-2" src="/Logo-UMAN.png" alt="logo asociatia uman" width={60} height={56} />Asociația Uman</Link>
+                    <Link className="flex text-gh-medium-grey items-center w-full md:w-auto no-underline justify-center" href="https://asociatiauman.ro" target="_blank"><Image className="w-12 md:w-auto mr-2" src="/Logo-UMAN.png" alt="logo asociatia uman" width={60} height={56} />Asociația Uman</Link>
                     <p className="hidden md:block text-gh-medium-grey font-light">|</p>
-                    <Link className="flex text-gh-medium-grey items-center gap-2 no-underline" href="https://www.saguna.ro"><Image src="/colegiul-national-andrei-saguna-brasov-logo.png" alt="logo asociatia uman" width={60} height={56} />Colegiul Național &quot;Andrei Șaguna&quot; Brașov</Link>
+                    <Link className="pl-6 flex text-gh-medium-grey items-center gap-2 no-underline justify-center" href="https://www.saguna.ro"><Image src="/colegiul-national-andrei-saguna-brasov-logo.png" alt="logo asociatia uman" width={60} height={56} />Colegiul Național <br /> &quot;Andrei Șaguna&quot; Brașov</Link>
                 </div>
             </div>
         </div>

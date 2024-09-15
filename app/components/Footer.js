@@ -26,9 +26,9 @@ export default function Footer() {
                     </nav>
                 </div>
                 <div className="flex flex-col items-center gap-2">
-                <Link className="text-gh-dark-green text-sm" href="https:/www.afm.ro"><Image src="/logo-afm-200.png" alt="Logo AFM" width={100} height={72} /></Link>
+                <Link className="text-gh-dark-green text-sm" href="https://www.afm.ro" target="_blank"><Image src="/logo-afm-200.png" alt="Logo AFM" width={100} height={72} /></Link>
                    <h3 className="text-sm text-center leading-tight">Proiect finanţat din Fondul pentru mediu în cadrul Programului vizând educaţia şi conştientizarea publicului privind protecţia mediului</h3>
-                   <Link className="text-gh-dark-green text-sm" href="https:/www.afm.ro">www.afm.ro</Link>
+                   <Link className="text-gh-dark-green text-sm" href="https://www.afm.ro" target="_blank">www.afm.ro</Link>
                    <p className="text-xs text-center"><strong>Beneficiar</strong>: Asociația Uman <br />
                    <strong>Partener</strong>: Colegiul Național “Andrei Șaguna” Brașov<br />
                    Valoarea totală a proiectului este de 499.482,00 lei<br />
@@ -39,7 +39,7 @@ export default function Footer() {
                   <Link className="w-44" href="https:/www.green-heroes.ro"><Image src="/green-heroes.png" alt="Green Heroes" width={600} height={300} /></Link>
                   <p4 className="font-bold text-center leading-tight">Accesează aplicația<br /> 
                   Green Heroes:</p4>
-                  <Link href="https:/www.green-heroes.ro"><button className="flex items-center gap-2">
+                  <Link href="https://www.green-heroes.ro" target="_blank"><button className="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Pornește aventura</button></Link>
                 </div>
             </div>
@@ -49,7 +49,7 @@ export default function Footer() {
                     Creat de: 
                     <Link className="flex text-gh-medium-grey items-center w-full md:w-auto no-underline justify-center" href="https://asociatiauman.ro" target="_blank"><Image className="w-12 md:w-auto mr-2" src="/Logo-UMAN.png" alt="logo asociatia uman" width={60} height={56} />Asociația Uman</Link>
                     <p className="hidden md:block text-gh-medium-grey font-light">|</p>
-                    <Link className="pl-6 flex text-gh-medium-grey items-center gap-2 no-underline justify-center" href="https://www.saguna.ro"><Image src="/colegiul-national-andrei-saguna-brasov-logo.png" alt="logo asociatia uman" width={60} height={56} />Colegiul Național <br /> &quot;Andrei Șaguna&quot; Brașov</Link>
+                    <Link className="pl-6 flex text-gh-medium-grey items-center gap-2 no-underline justify-center" href="https://www.saguna.ro" target="_blank"><Image src="/colegiul-national-andrei-saguna-brasov-logo.png" alt="logo asociatia uman" width={60} height={56} />Colegiul Național <br /> &quot;Andrei Șaguna&quot; Brașov</Link>
                 </div>
             </div>
         </div>

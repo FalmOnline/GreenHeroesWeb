@@ -5,6 +5,7 @@ import { useReCaptcha } from 'next-recaptcha-v3';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Link from 'next/link';
+import Map from '../components/Map';
 
 const ContactForm = () => {
   const { executeRecaptcha } = useReCaptcha();
@@ -171,6 +172,8 @@ const ContactForm = () => {
               border-color: #f5c6cb;
             }
           `}</style>
+
+            <Map />
         </div>
       </div>
     </section>

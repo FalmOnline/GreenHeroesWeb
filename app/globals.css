@@ -836,6 +836,10 @@ article a:hover {
 	margin-bottom: 1rem;
 }
 
+article .h-screen video {
+	height: 100vh;
+}
+
 /* Gallery */
 
 .wp-block-gallery {

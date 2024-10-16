@@ -15,8 +15,17 @@ export default async function Post({ params }) {
   }
 
   const { title, excerpt, content, featuredImage, modified } = postData;
-  const largeImage = featuredImage?.node?.mediaDetails?.sizes?.find(size => size.name === '1536x1536');
-  const imageUrl = largeImage?.sourceUrl || '';
+
+  // Log the featured image file if it exists
+  console.log(postData.featuredImage?.node?.mediaDetails?.file);
+  
+  // Get the dynamic part of the URL
+  const urlImage = featuredImage?.node?.mediaDetails?.file;
+  
+  // Combine the base URL and dynamic URL using a template literal
+  const imageUrl = `https://greenheroes.falm.ro/wp-content/uploads/${urlImage || ''}`;
+  
+  console.log(imageUrl);
 
 
   return (

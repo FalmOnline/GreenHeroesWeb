@@ -13,11 +13,23 @@
   .post-content a {
 	@apply underline text-blue-400 hover:text-blue-600;
   } */
+  .gh-green {
+    background-color: #DCFF80; /* Replace with your desired color */
+  }
   .text-balance {
     text-wrap: balance;
   }
 }
 
+.wp-block-file {
+	@apply flex items-center justify-between bg-white border border-gh-dark-grey rounded-lg p-4 mb-4;
+}
+.wp-block-file__button {
+	@apply  text-gh-dark-grey gh-green font-bold py-2 px-4 rounded-lg m-2 no-underline;
+}
+.wp-block-file__button:hover {
+	@apply bg-gh-dark-green text-gh-dark-grey;
+}
 
 /* Define vars for the root element */
 
